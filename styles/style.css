@@ -2,20 +2,21 @@
     src: url(./fonts/Raleway-Bold.woff) format ('woff');
     font-family: 'Raleway-Bold'; 
 }
+
 @font-face {
     src: url(./fonts/Raleway-Bold.woff2) format ('woff2');
     font-family: 'Raleway-Bold'; 
 }
+
 @font-face {
     src: url(./fonts/Raleway-Regular.woff) format ('woff');
     font-family: 'Raleway-Regular'; 
 }
+
 @font-face {
     src: url(./fonts/Raleway-Regular.woff2) format ('woff2');
     font-family: 'Raleway-Regular'; 
 }
-
-
 
 header {
 font-family:"Raleway-Regular", sans-serif;
