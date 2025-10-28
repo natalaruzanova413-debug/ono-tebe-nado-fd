@@ -3,9 +3,8 @@
   font-family: "Raleway-Bold";
 }
 
-
-@font-face {
-  src: url(./fonts/Raleway-Regular.woff) format("woff"), src: url(./fonts/Raleway-Regular.woff2) format("woff2");
+@font-face { 
+  src: url(./fonts/Raleway-Regular.woff) format("woff"), src:url(./fonts/Raleway-Regular.woff2) format("woff2");
   font-family: "Raleway-Regular";
 }
 
@@ -16,18 +15,14 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 96px;
-  padding-top: 92px;
 }
 
 .header__menu {
   display: flex;
-  margin-left: 0px;
-  margin-top: 133px;
-  margin-bottom: 138px;
-  margin-right: 36.52px;
+  padding-left: 50px;
+  padding-top: 133px;
+  padding-bottom: 138px;
+  padding-right: 36.52px;
 }
 
 .header__menu ul {
