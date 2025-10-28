@@ -120,32 +120,52 @@ address p {
   z-index: 2;
   box-sizing: border-box;
   text-align: center;
+  position: relative;
 }
 
 .cover__title .accent-span {
   display: block;
-  font-family: "Raleway-Bold", serif;
+  font-family: "Raleway-Bold", sans-serif;
   font-weight: 700;
   font-size: 100px;
   line-height: 1;
   color: #ffffff;
   margin: 0;
   text-transform: uppercase;
+  letter-spacing:30%;
 }
 
 .cover__title .accent-span:nth-child(1) {
   align-self: flex-start;
+  position: absolute;
+  left: 50px;     
+  right: 764px;   
+  bottom: 376px;  
+  top: 165px;    
   text-align: left;
+  letter-spacing:30%;
 }
 
 .cover__title .accent-span:nth-child(2) {
+  position: absolute;
   align-self: center;
   text-align: center;
+  left: 380.5px;     
+  right: 380.5px;   
+  bottom: 241px;  
+  top: 300px; 
+  letter-spacing:30%;
 }
 
 .cover__title .accent-span:nth-child(3) {
+  position: absolute;
   align-self: flex-end;
   text-align: right;
+  left: 663px;     
+  right: 50px;   
+  bottom: 106px;  
+  top: 435px; 
+  letter-spacing:30%;
 }
 
 .description {
