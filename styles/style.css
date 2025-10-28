@@ -1,27 +1,18 @@
 @font-face {
-  src: url(./fonts/Raleway-Bold.woff) format ("woff");
+  src: url(./fonts/Raleway-Bold.woff) format ("woff"), url(./fonts/Raleway-Bold.woff2) format("woff2");
   font-family: "Raleway-Bold";
 }
 
-@font-face {
-  src: url(./fonts/Raleway-Bold.woff2) format ("woff2");
-  font-family: "Raleway-Bold";
-}
 
 @font-face {
-  src: url(./fonts/Raleway-Regular.woff) format ("woff");
-  font-family: "Raleway-Regular";
-}
-
-@font-face {
-  src: url(./fonts/Raleway-Regular.woff2) format ("woff2");
+  src: url(./fonts/Raleway-Regular.woff) format("woff"), src: url(./fonts/Raleway-Regular.woff2) format("woff2");
   font-family: "Raleway-Regular";
 }
 
 header {
   font-family: "Raleway-Regular", sans-serif;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -344,7 +335,6 @@ address p {
   position: static;
   left: 0;
   top: 96px;
-  margin: 0;
   font-family: "Raleway-Bold", sans-serif;
   font-weight: 700;
   font-size: 40px;
