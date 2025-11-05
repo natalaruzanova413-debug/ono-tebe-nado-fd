@@ -5,40 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
       <nav class="header__menu">
-        <ul>
-          <li><a href="/home">главная</a></li>
-          <li><a href="/view-lots">посмотреть лоты</a></li>
-          <li><a href="/about-the-auction">об аукционе</a></li>
-        </ul>
-      </nav>
+  <ul>
+    <li><a href="/home" class="active-link">главная</a></li>
+    <li class="separator"></li>
+    <li><a href="/view-lots">посмотреть лоты</a></li>
+    <li class="separator"></li>
+    <li><a href="/about-the-auction">об аукционе</a></li>
+  </ul>
+</nav>
       <a class="header__logo">
         <img src="./images/logo-black.svg" alt="Логотип проекта" />
       </a>
-      <address>
-        <a href="tel:+99995555555" class="contact-link phone"
-          >+9 999 555 5555</a
-        >
-        <a href="mailto:info@sobaka.ge" class="contact-link email"
-          >info@sobaka.ge</a
-        >
-        <p>наб. Принсенграхт 263-</p>
-        <p>265, Амстердам</p>
-      </address>
+      <address class="address--header">
+  <a href="tel:+99995555555" class="contact-link phone">+9 999 555 5555</a>
+  <a href="mailto:info@sobaka.ge" class="contact-link email">info@sobaka.ge</a>
+  <p>наб. Принсенграхт 263-<br/>265,Амстердам</p>
+</address>
     </header>
     <main>
      <section class="cover">
   <div class="overlay"></div>
   <h1 class="cover__title">
-    <span class="accent-span text-left">Оно</span>
-    <span class="accent-span text-center">теб<span class="no-tracking">е</span></span>
-    <span class="accent-span">над<span class="no-tracking">о</span></span>
+    <span class="accent-span text-left">оно</span>
+    <span class="accent-span text-center">тебе</span>
+    <span class="accent-span">надо</span>
   </h1>
   <div class="description">
     <div class="subline">
@@ -76,7 +73,6 @@
         </article>
       </a>
     </li>
-
     <li class="lots__item">
       <a href="#A-picture-that-even-a-5-year-old-son-of-my-friend's-mother-can-recreate" class="card card_type_picture">
         <div class="overlay"></div>
@@ -93,9 +89,9 @@
   </ul>
   <a href="#" class="lots__more-link">Посмотреть больше</a>
 </section>
-      <div class="about">
+      <section class="about">
         <div class="about__logo">
-          <img src="../images/logo-white.svg" alt="logo" />
+          <img src="./images/logo-white.svg" alt="логотип компании" />
         </div>
         <div class="about__column">
           <h2>Об аукционе</h2>
@@ -118,22 +114,28 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
-     <address class="address-footer">
+     <div class="address--footer">
   <a href="tel:+99995555555" class="contact-link phone">+9 999 555 5555</a>
   <a href="mailto:info@sobaka.ge" class="contact-link email">info@sobaka.ge</a>
-  <p>наб. Принсенграхт 263-265,</p>
-  <p>Амстердам</p>
-</address>
-      <div class="menu">
-        <ul>
-          <li><a href="/home">главная</a></li>
-          <li><a href="/view-lots">посмотреть лоты</a></li>
-          <li><a href="/about-the-auction">об аукционе</a></li>
-        </ul>
-      </div>
+  <p>наб. Принсенграхт 263-265,<br/>Амстердам </p>
+  <p></p>
+     </div>
+      <nav class="footer__menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="/home" class="menu__link active-link is-active">главная</a>
+      </li>
+      <li class="menu__item">
+        <a href="/view-lots" class="menu__link">посмотреть лоты</a>
+      </li>
+      <li class="menu__item">
+        <a href="/about-the-auction" class="menu__link">об аукционе</a>
+      </li>
+    </ul>
+  </nav>
       <div class="social-links">
         <a href="https://yt.com"><img src="./images/yt.svg" alt="YouTube" /></a>
         <a href="https://vk.com"><img src="./images/vk.svg" alt="VK" /></a>

@@ -1,20 +1,4 @@
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Regular.woff2") format("woff2"),
-    url("../fonts/Raleway-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Bold.woff2") format("woff2"),
-    url("../fonts/Raleway-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 header {
   font-family: "Raleway", sans-serif;
@@ -41,7 +25,6 @@ header {
   padding: 0;
   margin: 0;
   align-items: center;
-  gap: 24px;
 }
 
 .header__menu ul li {
@@ -49,18 +32,20 @@ header {
   position: relative;
 }
 
-.header__menu ul li:not(:last-child)::after {
-  content: "";
+.header__menu ul .separator {
+  display: inline-block;
   width: 6px;
   height: 6px;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   border-radius: 50%;
-  position: absolute;
-  right: -12px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 0 12px;
 }
+
+.header__menu ul li a.active-link {
+      text-decoration: none; 
+      color: #000000; 
+    }
 
 .header__logo {
   display: flex;
@@ -76,15 +61,18 @@ header {
 }
 
 address {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 240px;
-  height: 98px;
-  justify-self: end;
-  margin-right: 50px;
-  padding: 0;
   gap: 4px;
+  box-sizing: border-box;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  line-height: 24.3px; 
   white-space: normal;
 }
 
@@ -93,9 +81,13 @@ address p {
   white-space: nowrap;
 }
 
-.contact-link {
+.address.contact-link {
   text-decoration: underline;
   color: inherit;
+}
+
+.address--header {
+margin-left: 184px;
 }
 
 .cover {
@@ -110,13 +102,6 @@ address p {
   align-items: center;
   padding: 0 50px;
   box-sizing: border-box;
-}
-
-.cover .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 1;
 }
 
 .cover__title {
@@ -141,7 +126,7 @@ address p {
   width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: clamp(32px, 8vw, 100px);
+  font-size: 100px;
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
@@ -150,24 +135,22 @@ address p {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-.cover__title .accent-span .no-tracking {
-  letter-spacing: 0;
-  display: inline-block;
-  transform: translateX(0.125em);
+  justify-content:center; 
+  flex:1 1 0;
 }
 
 .cover__title .accent-span:nth-child(1) {
   justify-content: flex-start;
+  
 }
 
 .cover__title .accent-span:nth-child(2) {
   justify-content: center;
+  padding-left:26px;
 }
 
 .cover__title .accent-span:nth-child(3) {
-  justify-content: flex-end;
+  padding-left:660px;
 }
 
 .description {
@@ -250,6 +233,7 @@ address p {
 }
 
 .lots__item {
+  display: flex;
   flex: 1 1 30%;
   min-height: 596px;
 }
@@ -258,7 +242,6 @@ address p {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 48px 40px;
   color: #fff;
   text-decoration: none;
@@ -287,23 +270,13 @@ address p {
 }
 
 .card__content {
+  justify-content: space-between;
+  flex: 1 1 auto;
   display: flex;
   position: relative;
   flex-direction: column;
   z-index: 2;
-  flex-grow: 1;
-}
-
-.lots__item:first-child .card__text {
-  margin-top: auto;
-}
-
-.lots__item:nth-child(2) .card__text {
-  margin-top: 30px;
-}
-
-.lots__item:nth-child(3) .card__text {
-  margin-top: 126px;
+  gap: 16px;
 }
 
 .card__title {
@@ -311,7 +284,7 @@ address p {
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 4px;
-  margin-bottom: 16px;
+  margin: 0;
 }
 
 .card__text {
@@ -319,6 +292,7 @@ address p {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
+  margin: 0;
 }
 
 .lots__more-link {
@@ -340,11 +314,10 @@ address p {
   justify-content: center;
   align-items: flex-start;
   padding-left: 71px;
+  margin-bottom:190px;
 }
 
 .about__logo {
-  width: 240px;
-  height: 240px;
   border-radius: 50%;
   background-color: #000;
   position: relative;
@@ -387,7 +360,6 @@ address p {
   text-align: left;
   margin-top: 0;
   max-width: 693px;
-  max-height: 312px;
 }
 
 .paragraph-group p {
@@ -405,32 +377,31 @@ address p {
 }
 
 footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: auto 1fr 1fr;
   align-items: center;
   margin-left: 50px;
   margin-right: auto;
-  padding-bottom: 82px;
-  margin-top: 180px;
+  gap: 70px;
 }
 
-.address-footer {
+.address--footer {
   grid-column: 1;
-  text-align: left;
-  line-height: 24.3px;
-  color: #000000;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  width: 264.57px;
-  height: 98px;
-  box-sizing: border-box;
+  margin-right: auto;
+  padding-bottom: 82px;
+  align-items: flex-start;
+  align-self: start;
 }
 
-.menu {
-  width: 163.9px;
-  height: 64px;
+.address--footer .contact-link {
+  display: block;
+}
+
+.footer__menu {
   box-sizing: border-box;
   grid-column: 2;
   display: flex;
@@ -441,14 +412,23 @@ footer {
   align-self: start;
 }
 
-.menu ul {
+.menu__list {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-.menu li {
+
+.menu__item {
   margin: 6px 0;
+}
+
+.menu__link {
+  text-decoration: underline;
+}
+
+.menu__link.is-active {
+  text-decoration: none;
 }
 
 .menu a {
@@ -462,22 +442,20 @@ footer {
 .social-links {
   grid-column: 3;
   display: flex;
-  gap: 16px;
+  gap: 48px;
   padding-right: 50px;
-  width: 240px;
-  height: 48px;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 0px;
+  padding-bottom: 131px;
   justify-self: center;
   align-self: start;
 }
 
 .social-links a {
-  width: 48px;
-  height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  width:48px;
+  height:48px;
 }
