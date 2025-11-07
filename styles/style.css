@@ -1,5 +1,3 @@
-
-
 header {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -14,32 +12,40 @@ header {
 }
 
 .header__menu {
-  display: flex;
   margin-left: 50px;
   padding: 0;
 }
 
 .header__menu ul {
-  display: flex;
-  list-style: none;
+display:flex;
+list-style: circle;
+  margin-right: 13px;
+  list-style-position: inside;
+  margin: 0; 
   padding: 0;
-  margin: 0;
-  align-items: center;
+  gap: 13px;
 }
 
 .header__menu ul li {
-  margin-right: 13px;
-  position: relative;
+position: relative; 
+padding-left: 0.8em;
 }
 
-.header__menu ul .separator {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: transparent;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  margin: 0 12px;
+.header__menu ul li.view-lots {
+  margin-left: -12px;
+}
+
+.header__menu ul li.about-the-auction {
+   margin-left: -12px;
+}
+
+.header__menu ul li:first-child {
+  list-style: none; 
+  margin-left: -1.2em;
+}
+
+.header__menu ul li:first-child::before {
+  content: none;
 }
 
 .header__menu ul li a.active-link {
@@ -61,6 +67,7 @@ header {
 }
 
 address {
+  font-style: normal;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -73,7 +80,6 @@ address {
   margin: 0;
   padding: 0;
   line-height: 24.3px;
-  white-space: normal;
 }
 
 address p {
@@ -195,7 +201,7 @@ margin-left: 184px;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
-  padding: 10px 28px;
+  padding: 10px 19px;
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -312,7 +318,7 @@ margin-left: 184px;
   justify-content: center;
   align-items: flex-start;
   padding-left: 71px;
-  margin-bottom:190px;
+  margin-bottom:170px;
 }
 
 .about__logo {
@@ -393,10 +399,15 @@ footer {
   padding-bottom: 82px;
   align-items: flex-start;
   align-self: start;
+  gap:1px;
 }
 
 .address--footer .contact-link {
   display: block;
+}
+
+.address--footer .contact-link.phone {
+  margin-top: 16px;
 }
 
 .footer__menu {
@@ -405,9 +416,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 0px;
+  padding-top: 7px;
   justify-self: center;
   align-self: start;
+  margin-left:40px;
 }
 
 .menu__list {
@@ -418,7 +430,7 @@ footer {
 }
 
 .menu__item {
-  margin: 6px 0;
+  margin: 2px 0;
 }
 
 .menu__link {
@@ -441,12 +453,13 @@ footer {
   grid-column: 3;
   display: flex;
   gap: 48px;
-  padding-right: 50px;
+  padding-right: 5px;
   justify-content: center;
   align-items: flex-start;
   padding-bottom: 131px;
   justify-self: center;
   align-self: start;
+  margin-top:11px;
 }
 
 .social-links a {
