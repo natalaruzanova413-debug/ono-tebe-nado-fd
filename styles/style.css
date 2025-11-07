@@ -21,13 +21,13 @@ display:flex;
 list-style: circle;
   margin-right: 13px;
   list-style-position: inside;
-  margin: 0; 
+  margin: 0;
   padding: 0;
   gap: 13px;
 }
 
 .header__menu ul li {
-position: relative; 
+position: relative;
 padding-left: 0.8em;
 }
 
@@ -40,7 +40,7 @@ padding-left: 0.8em;
 }
 
 .header__menu ul li:first-child {
-  list-style: none; 
+  list-style: none;
   margin-left: -1.2em;
 }
 
